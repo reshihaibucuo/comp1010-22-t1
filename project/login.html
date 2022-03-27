@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="loginpage" href="./login.css">
+
+<head>
+</head>
+
+<body style="background-color: #eceff1;">
+    <div class="topblock"></div>
+    <div class="outsidebox">
+        <div class="signincontainer">
+            <div class="containerwarper">
+
+                <h1>UNSW <br>Teammates Finder</h1>
+                <form >
+                    <span style="display: inline-block; position: relative; width: 320px;">
+                        <input type="text" name="email">
+                    </span>
+                    <p style="margin-top: 10px; margin-bottom: 10px; line-height: 18px; padding-top: 3px;"></p>
+                    <span style="display: inline-block; position: relative;">
+                        <input type="password" name="password">
+                    </span>
+                    <p style="margin-top: 10px; margin-bottom: 10px; line-height: 18px; padding-top: 3px;"></p>
+                    <input type="submit" value="Sign In">
+                </form>
+                <div class="otherloginactions">
+                    <a href="baidu.com" style="float: left;" target="_blank">Forget password</a>
+                    <a href="google.com" style="float: right;"target="_blank">Sign Up</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<style>
+    .topblock {
+        color: #fff;
+        height: 300px;
+
+    }
+
+    .outsidebox {
+        width: 400px;
+        /* background */
+        background-image: initial;
+        background-size: initial;
+        background-color: white;
+        /* padding */
+        padding-top: 40px;
+        padding-right: 0px;
+        padding-bottom: 33px;
+        padding-left: 0px;
+        /* border */
+        border-radius: 10px;
+        border-color: rgb(238, 238, 238);
+        border-style: solid;
+        border-width: 1px;
+        /* margin */
+        margin-top: 0px;
+        margin-right: auto;
+        margin-bottom: 0px;
+        margin-left: auto;
+    }
+
+    .signincontainer {
+        max-width: 350px;
+        /* margin */
+        margin-top: 0px;
+        margin-right: auto;
+        margin-bottom: 0px;
+        margin-left: auto;
+    }
+
+    .containerwarper {
+        /* padding */
+        padding-left: 10px;
+        padding-right: 10px;
+        /* margin */
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    input{
+        /* border */
+        border-radius: 3px;
+        border-width: 1px;
+
+    }
+    input[type=text] {
+        /* padding */
+        padding-top: 8px;
+        padding-left: 13px;
+        padding-right: 13px;
+        padding-bottom: 8px;
+        /* font */
+        font-size: 14px;
+        width: 290px;
+    }
+
+    input[type=password] {
+        /* padding */
+        padding-top: 8px;
+        padding-left: 13px;
+        padding-right: 13px;
+        padding-bottom: 8px;
+        font-size: 14px;
+        width: 290px;
+    }
+
+    input[type=submit] {
+        /* padding */
+        padding-top: 8px;
+        padding-left: 13px;
+        padding-right: 13px;
+        padding-bottom: 8px;
+        font-size: 14px;
+        width: 320px;
+        background-color: #4d646f;
+        border-style: none;
+        color: aliceblue;
+        font-weight: bold;
+        
+    }
+    input[type=submit]:hover {
+        background-color: #228ec4;
+    }
+    .otherloginactions {
+        justify-content: space-between;
+        margin-top: 20px;
+        align-items: center;
+        padding-bottom: 15px;
+    }
+    a, a:active {
+        text-decoration: none;
+        color: #495f69;
+        display: inline-block;
+        
+    }
+    
+</style>
+
+</html>
