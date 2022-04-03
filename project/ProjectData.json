@@ -1,0 +1,20 @@
+{
+    "users": [
+        {
+            "email": "1@abc.com",
+            "password": "abc",
+            "Username": "Yinglu"
+        },
+        {
+            "email": "2@abc.com",
+            "password": "abc",
+            "username": "Jack"
+        },
+        {
+            "email": "z5339232@ad.unsw.edu.au",
+            "password": "abc",
+            "username": "Yinglu"
+        }
+    ],
+    "posts": []
+}
