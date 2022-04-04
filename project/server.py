@@ -1,12 +1,12 @@
 # import imp
 from datetime import timedelta
-from email import message
 from operator import imod
 from flask import Flask, redirect, request, url_for, session
 from pyhtml import html # TODO add imports
 import LoginPage 
 from datastore import dataset, jsonread, jsonsave
 import helper
+import Mainpage
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '08ccccb937fa253dfb0462d9289aa05d7ae5d3ada0ce1876f5743b1f3b88bd3e'
 dataset = jsonread()
@@ -18,8 +18,8 @@ def make_session_permanent():
 
 @app.route('/', methods=["GET", "POST"])
 def homepage():    
-    return redirect(url_for('login'))
-
+    return redirect(url_for('mainpage'))
+# Login Pages
 @app.route('/login', methods=["GET", "POST"])
 def login():
     login_error = False
@@ -67,10 +67,15 @@ def resetpassword():
             LoginPage.send_password(request.form['email'], helper.search_user(dataset['users'], request.form['email']))
             return redirect(url_for('login'))
     return LoginPage.PasswordReset(error)
+# Main Page
 
 @app.route('/mainpage', methods=["GET"])
 def mainpage():
-    return f"Here is Main page <br> User = <a href='/'>back</a>{session['user_saved_data']} <br> <a href='/clear'>log out</a>"
+    islogin = False
+    if 'user_saved_data' in session:
+        islogin = True
+    return Mainpage.DashBoard(islogin)
+    # return f"Here is Main page <br> User = <a href='/'>back</a>{session['user_saved_data']} <br> <a href='/clear'>log out</a>"
 
 
 @app.route('/clear', methods=["GET"])
@@ -78,7 +83,9 @@ def reset():
     session.clear()
     return redirect(url_for('login'))
 
- 
+@app.route('/viewprofile', methods=["GET"])
+def viewprofile():
+    return "profile "
 if __name__ == "__main__":
     app.run(debug=True)
 

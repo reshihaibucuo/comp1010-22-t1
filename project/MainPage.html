@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="loginpage" href="./login.css">
+
+<head>
+    <title>Teammates Finder</title>
+
+</head>
+
+<body style="background-color: #eceff1; margin: 0px;">
+    <!-- <p style="background-color: #ffcc00;">Teammates Finder</p> -->
+    <div class="top_navbar">
+        <div class="navbar_left_container">
+            <div class="navbar_item">
+                <a href="/" class="navbar_item_content"> Teammates Finder </a>
+            </div>
+            <div class="navbar_item">
+                <a href="" class="navbar_item_content"> Post Board</a>
+            </div>
+            <div class="navbar_item">
+                <a href="" class="navbar_item_content"> Mates Explore</a>
+            </div>
+            <div class="navbar_item">
+                <a href="" class="navbar_item_content"> Your Team</a>
+            </div>
+        </div>
+        <!-- Right Insert here -->
+        <!-- <div class="navbar_right_container">
+            <div class="navbar_item">
+                <a href="login" class="navbar_item_content"> My Profile </a>
+            </div>
+            <div class="navbar_item">
+                <a href="login" class="navbar_item_content"> My Setting </a>
+            </div>
+            <div class="navbar_item">
+                <a href="clear" class="navbar_item_content"> Log out </a>
+            </div>
+        </div> -->
+    </div>
+    <div class="container">
+
+        <div class="sidebar">
+            <div class="sidebar_container">
+                <ul class="list_group">
+                    <li class="list_group_item" style="background-color: rgb(255, 208, 79); "><a  style="color:black; font-weight: bold;">Your Mates</a></li>
+                    <!-- Insert Users name here -->
+                    <li class="list_group_item"><a >Jack</a></li>
+                    <li class="list_group_item"><a >Tom</a></li>
+                    <li class="list_group_item"><a >AAA</a></li>
+                    <li class="list_group_item"><a >BBB</a></li>
+                    <li class="list_group_item"><a >User name</a></li>
+                    <li class="list_group_item"><a >User name</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- <div style="height: 300px;"></div> -->
+        <div class="maincontent" style="background-color: white;">
+            <div class="page_header">
+                <h1 style="display: inline-flex;"> UNSW Teammates Finder</h1>
+                <p style="display: inline-flex; color: #444444;">@made by Yinglu and Du</p>
+            </div>
+            <div class="main_panel">
+                <ul class="list_group">
+                    <li class="list_group_item" style="background-color: rgb(255, 208, 79); "><a  style="color:black; font-weight: bold;">Posts</a></li>
+                    <li class="list_group_item">
+                        <h4>Hi everybody</h4>
+                        <h4><small>Post by <a href="">Yinglu</a>.</small></h4>
+                        <p>Hi every one, welcome to UNSW finder</p>
+                        <p>Hi every one, welcome to UNSW finder</p>
+                    </li>
+                    <!-- Posts Insert Here -->
+                    <li class="list_group_item">
+                        <h2>Hi everybody</h2>
+                    </li>
+                    <li class="list_group_item">
+                        <h2>Hi everybody</h2>
+                    </li>
+                    <li class="list_group_item">
+                        <h2>Hi everybody</h2>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- <div class="topblock"></div> -->
+    </div>
+        
+</body>
+<style>
+    .top_navbar {
+        width: 100%;
+        position: relative;
+        align-items: center;
+        height: 20px;
+        border-bottom: 1px solid rgba(177, 177, 177, 0.76);
+        background-color: rgb(255, 208, 79);
+        margin-top: 2px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 13px;
+    }
+
+    .navbar_left_container {
+        float: left;
+        display: flex;
+        box-sizing: border-box;
+    }
+
+    .navbar_item {
+        margin-left: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+
+    .navbar_item_content {
+        color: black;
+        font-size: 15px;
+    }
+
+    .navbar_item_content:hover {
+        color: rgba(0, 0, 0, 0.377);
+    }
+
+    .navbar_right_container {
+        float: right;
+        display: flex;
+        box-sizing: border-box;
+
+    }
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-right: 45px;
+        margin-left: 45px;
+    }
+    .sidebar, .maincontent {
+        position: relative;
+        display: inline;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 25px;
+    }
+    .sidebar {
+        float: left;
+        width: 25%;
+        max-width: 300px;
+    }
+    .maincontent {
+        float: left;
+        width: 70%;
+        margin-top: 40px;
+        /* padding-right: 20px; */
+
+    }
+    .sidebar_container {
+        padding-top: 15px;
+        box-sizing: border-box;
+        /* background-color: red; */
+    }
+    
+    .list_group {
+        margin-bottom: 20px;
+        list-style-type: none;
+        margin-top: 0px;
+    }
+    .list_group_item {
+        position: relative;
+        display: block;
+        padding: 10px 15px;
+        margin-bottom: -1px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+    }
+    .page_header {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        padding-bottom: 9px;
+        border-bottom: 1px solid #eee;
+    }
+    .main_panel {
+        margin-bottom: 20px;
+        background-color: white;
+        border: 1px solid #ffaa2c;
+    }
+    .outsidebox {
+        width: 400px;
+        /* background */
+        background-image: initial;
+        background-size: initial;
+        background-color: white;
+        /* padding */
+        padding-top: 40px;
+        padding-right: 0px;
+        padding-bottom: 33px;
+        padding-left: 0px;
+        /* border */
+        border-radius: 10px;
+        border-color: rgb(238, 238, 238);
+        border-style: solid;
+        border-width: 1px;
+        /* margin */
+        margin-top: 0px;
+        margin-right: auto;
+        margin-bottom: 0px;
+        margin-left: auto;
+        box-shadow: rgb(133, 133, 133) 2px 2px 8px;
+    }
+
+    .signincontainer {
+        max-width: 350px;
+        /* margin */
+        margin-top: 0px;
+        margin-right: auto;
+        margin-bottom: 0px;
+        margin-left: auto;
+    }
+
+    .containerwarper {
+        /* padding */
+        padding-left: 10px;
+        padding-right: 10px;
+        /* margin */
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    input {
+        /* border */
+        border-radius: 3px;
+        border-width: 1px;
+        border-color: #cfd8dc;
+        border-style: solid;
+        /* padding */
+        padding-top: 8px;
+        padding-left: 13px;
+        padding-right: 13px;
+        padding-bottom: 8px;
+        /* font */
+        font-size: 14px;
+        width: 290px;
+    }
+    ul, ol {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    ul {
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
+    }
+    input[type=submit] {
+        /* padding */
+        padding-top: 8px;
+        padding-left: 13px;
+        padding-right: 13px;
+        padding-bottom: 8px;
+        font-size: 14px;
+        width: 320px;
+        background-color: #4d646f;
+        border-style: none;
+        color: aliceblue;
+        font-weight: bold;
+
+    }
+
+    input[type=submit]:hover {
+        background-color: #228ec4;
+    }
+
+    input:hover {
+        border-color: rgb(122, 119, 119);
+    }
+
+    .otherloginactions {
+        justify-content: space-between;
+        margin-top: 20px;
+        align-items: center;
+        padding-bottom: 15px;
+    }
+
+    a,
+    a:active {
+        text-decoration: none;
+        color: #495f69;
+        display: inline-block;
+
+    }
+    h4 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    p {
+        font-size: 14px;
+    }
+</style>
+
+</html>
