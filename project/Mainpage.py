@@ -14,14 +14,14 @@ def No_login_nvabar():
     """
     
 
-def Login_nvabar():
-    return """
+def Login_nvabar(email):
+    return f"""
         <div class="navbar_right_container">
             <div class="navbar_item">
-                <a href="login" class="navbar_item_content"> My Profile </a>
+                <a href="viewprofile?email={email}" class="navbar_item_content"> My Profile </a>
             </div>
             <div class="navbar_item">
-                <a href="login" class="navbar_item_content"> My Setting </a>
+                <a class="navbar_item_content" href="mysetting?email={email}"> My Setting </a>
             </div>
             <div class="navbar_item">
                 <a href="clear" class="navbar_item_content"> Log out </a>
@@ -32,23 +32,29 @@ def newpost(username, email, head, message):
     return f"""
         <li class="list_group_item">
             <h4>{head}</h4>
-            <h4><small>Post by <a href="">{username}</a>.</small></h4>
+            <h4><small>Post by <a href="viewprofile?email={email}">{username}</a>.</small></h4>
             <p>{message}</p>
         </li>
     """
     # return str(new)
-def Users(name):
+def User(name, email):
     return f"""
-        <li class="list_group_item"><a >{name}</a></li>
+        <li class="list_group_item"><a href="viewprofile?email={email}">{name}</a></li>
     """
-    # return str(new)
-def DashBoard(login):
+def Users(users):
+    content = ""
+    for user in users:
+        content += User(user['username'], user['email'])
+    return content
+
+def DashBoard(login, user, users):
     with open("./MainPage.html", "r") as fl:
         contents = fl.readlines()
-    contents.insert(72, newpost("Test User", "email@email", "TEST", "This is a test post"))
-    contents.insert(47, Users("Test name"))
+    # TODO: JUST A EXAMPLE
+    contents.insert(71, newpost("Jack", "2@abc.com", "TEST", "This is a test post"))
+    contents.insert(47, Users(users))
     if login:
-        contents.insert(28, Login_nvabar())
+        contents.insert(28, Login_nvabar(user['email']))
     else:
         contents.insert(28, No_login_nvabar())
 

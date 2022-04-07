@@ -3,17 +3,37 @@
         {
             "email": "1@abc.com",
             "password": "abc",
-            "Username": "Yinglu"
+            "username": "Yinglu",
+            "WAM":0,
+            "WAM_perfered":0,
+            "perference": [],
+            "good_at": [],
+            "icon_link": "https://www.unsw.edu.au/etc/clientlibs/unsw-common/unsw-assets/img/social/UNSWlogo-opengraph-squaresafe.png",
+            "introduction": "This is Yinglu"
         },
         {
             "email": "2@abc.com",
             "password": "abc",
-            "username": "Jack"
+            "username": "Jack",
+            "WAM":0,
+            "WAM_perfered":0,
+            "perference": [],
+            "good_at": [],
+            "icon_link": "https://www.unsw.edu.au/etc/clientlibs/unsw-common/unsw-assets/img/social/UNSWlogo-opengraph-squaresafe.png",
+            "introduction": ""
+
         },
         {
             "email": "z5339232@ad.unsw.edu.au",
             "password": "abc",
-            "username": "Yinglu"
+            "username": "Yinglu",
+            "WAM":0,
+            "WAM_perfered":0,
+            "perference": [],
+            "good_at": [],
+            "icon_link": "https://www.unsw.edu.au/etc/clientlibs/unsw-common/unsw-assets/img/social/UNSWlogo-opengraph-squaresafe.png",
+            "introduction": ""
+
         }
     ],
     "posts": []
